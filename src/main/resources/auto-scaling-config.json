@@ -1,0 +1,44 @@
+{
+  "load_generator_ami" : "ami-005e68b05d85cc4ab",
+
+  "web_service_ami" : "ami-02fe0c8508665a2ce",
+
+  "instance_type" : "m5.large",
+
+  "asg_max_size" : 10,
+
+  "asg_min_size" : 1,
+
+  "health_check_grace_period" : 180,
+
+  "cool_down_period_scale_in" : 60,
+
+  "cool_down_period_scale_out" : 60,
+
+  "scale_out_adjustment" : -2,
+
+  "scale_in_adjustment" : 2,
+
+  "asg_default_cool_down_period" : 60,
+
+  "alarm_period" : 60,
+
+  "cpu_lower_threshold" : 50,
+
+  "cpu_upper_threshold" : 80,
+
+  "alarm_evaluation_periods_scale_out" : 1,
+
+  "alarm_evaluation_periods_scale_in" : 1,
+
+  "key_name": "CCProject0", 
+
+  "auto_scaling_target_group": "targetGroup",
+
+  "load_balancer_name": "LoadBalancer",
+
+  "launch_configuration_name": "LaunchConfiguration",
+
+  "auto_scaling_group_name": "AutoScalingGroup"
+
+}
